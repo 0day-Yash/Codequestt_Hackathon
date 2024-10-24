@@ -9,32 +9,35 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #fff;
     background: linear-gradient(135deg, #1d1d35, #090912);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow-x: hidden;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    text-align: center;
 }
 
 /* Header Styling */
 header {
     width: 100%;
-    position: absolute;
+    position: sticky;
     top: 0;
-    left: 0;
+    z-index: 1000;
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .logo h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 600;
     color: #9f9df5;
 }
@@ -42,15 +45,13 @@ header {
 .nav-links {
     display: flex;
     list-style: none;
-}
-
-.nav-links li {
-    margin-left: 30px;
+    gap: 40px;
 }
 
 .nav-links li a {
     text-decoration: none;
     font-weight: 400;
+    font-size: 1.1rem;
     color: #d1d1e9;
     transition: color 0.3s ease;
 }
@@ -61,7 +62,7 @@ header {
 
 /* Hero Section */
 .hero {
-    height: 80vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,9 +104,156 @@ header {
     background-color: #9f9df5;
 }
 
+/* About Section */
+.about-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #e6e6ff;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    color: #b3b3d9;
+}
+
+/* Events Section */
+.events-section {
+    padding: 80px 20px;
+    background-color: #101026;
+}
+
+.events-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #e6e6ff;
+}
+
+.event-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #9f9df5;
+}
+
+.card p {
+    font-size: 1.1rem;
+    color: #b3b3d9;
+}
+
+/* Schedule Section */
+.schedule-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.schedule-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #e6e6ff;
+}
+
+.schedule-list {
+    list-style: none;
+    font-size: 1.2rem;
+    color: #b3b3d9;
+}
+
+.schedule-list li {
+    margin-bottom: 10px;
+}
+
+/* Sponsors Section */
+.sponsors-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #101026;
+}
+
+.sponsors-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #e6e6ff;
+}
+
+.sponsors-section p {
+    font-size: 1.2rem;
+    color: #b3b3d9;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #e6e6ff;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    color: #b3b3d9;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-section input, .contact-section textarea {
+    width: 80%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.contact-section button {
+    padding: 15px 40px;
+    font-size: 1rem;
+    background-color: #663399;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section button:hover {
+    background-color: #9f9df5;
+}
+
 /* Footer */
 footer {
-    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
     font-size: 0.9rem;
     color: #b3b3d9;
 }

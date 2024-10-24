@@ -11,28 +11,93 @@
 <body>
     <div class="container">
         <header>
-            <nav>
+            <nav class="navbar">
                 <div class="logo">
                     <h1>CodeQuestt</h1>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Register</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#register">Register</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
         
+        <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content">
                 <h2>Unleash Your Creativity at</h2>
                 <h1>CodeQuestt Hackathon 2025</h1>
                 <p>January 17 - 19, 2025 | Grades 8 to 12 | Team or Solo</p>
-                <a href="#" class="btn">Join the Challenge</a>
+                <a href="#register" class="btn">Join the Challenge</a>
             </div>
         </section>
 
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2>About CodeQuestt</h2>
+            <p>CodeQuestt is an annual hackathon designed for students in Grades 8 to 12, aiming to foster creativity, problem-solving, and technical skills. Whether you're a beginner or a seasoned coder, CodeQuestt provides an opportunity to work in teams or solo to tackle innovative challenges.</p>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" class="events-section">
+            <h2>Featured Events</h2>
+            <div class="event-cards">
+                <div class="card">
+                    <h3>Code Clash</h3>
+                    <p>A competitive programming challenge where coders battle head-to-head to solve the toughest problems.</p>
+                </div>
+                <div class="card">
+                    <h3>Market Mavericks</h3>
+                    <p>Pitch your ideas and compete in a startup simulation, where innovation meets business acumen.</p>
+                </div>
+                <div class="card">
+                    <h3>Chess Titans</h3>
+                    <p>A strategic chess competition, testing your brainpower and decision-making under pressure.</p>
+                </div>
+                <div class="card">
+                    <h3>Artistic Odyssey</h3>
+                    <p>Express your creativity through digital design and artistic ventures, showcasing the blend of art and code.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="schedule-section">
+            <h2>Event Schedule</h2>
+            <ul class="schedule-list">
+                <li><strong>January 17, 2025:</strong> Opening Ceremony & Team Formation</li>
+                <li><strong>January 18, 2025:</strong> Coding Marathon & Workshops</li>
+                <li><strong>January 19, 2025:</strong> Final Submissions & Award Ceremony</li>
+            </ul>
+        </section>
+
+        <!-- Register Section -->
+        <section id="register" class="register-section">
+            <h2>Register Now</h2>
+            <p>Choose your registration type:</p>
+            <div class="register-buttons">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiEbFFkY1BMef_frk4bNhH1AI4CDEQPaUedPBssfuMdqTYyw/viewform" target="_blank" class="btn">Individual Registration</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc5xmj3r7V-1NgYoGH8AbK2fFcjYw1pP9pOFHW89MeOywI4dw/viewform" target="_blank" class="btn">School Team Registration</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_vT4jCwmCIp8b9e49WSwyKUoqyWT70pXpFuJPZPbM9vR9RA/viewform" target="_blank" class="btn">Team Registration</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to partner with us, feel free to reach out!</p>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
         <footer>
             <p>&copy; 2025 CodeQuestt. All rights reserved.</p>
         </footer>
