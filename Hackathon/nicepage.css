@@ -43545,8 +43545,13 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 }
 @media (max-width: 575px) {
+  .u-header .u-text-1 {
+    width: auto;
+    margin-top: 52px;
+  }
+
   .u-header .u-menu-1 {
-    margin-left: 319px;
+    margin: -35px 0 56px auto;
   }
 }
 .u-footer .u-sheet-1 {
