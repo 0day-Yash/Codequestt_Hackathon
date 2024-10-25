@@ -1,3 +1,8 @@
+/* Apply Oxanium to the entire body */
+body, h1, h2, h3, p, a, button {
+    font-family: 'Oxanium', sans-serif;
+}
+
 /* General Reset */
 * {
     margin: 0;
@@ -6,58 +11,53 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Oxanium', sans-serif;
     color: #fff;
-    background: linear-gradient(135deg, #1d1d35, #090912);
+    background: #000;
     overflow-x: hidden;
 }
 
+/* Container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Header Styling */
-header {
-    width: 100%;
-    position: sticky;
+/* Navbar */
+nav {
+    position: fixed;
+    left: 0;
+    right: 0;
     top: 0;
-    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
-.navbar {
+.nav-inner {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+nav a {
+    color: #b3b3d9;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #00FF99;
 }
 
 .logo h1 {
     font-size: 2.2rem;
     font-weight: 600;
-    color: #9f9df5;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 40px;
-}
-
-.nav-links li a {
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 1.1rem;
-    color: #d1d1e9;
-    transition: color 0.3s ease;
-}
-
-.nav-links li a:hover {
-    color: #9f9df5;
+    color: #fff;
 }
 
 /* Hero Section */
@@ -67,18 +67,13 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .hero h1 {
     font-size: 4rem;
     margin-bottom: 20px;
-    color: #e6e6ff;
-}
-
-.hero h2 {
-    font-size: 2rem;
-    font-weight: 300;
-    color: #d1d1e9;
+    color: #fff;
 }
 
 .hero p {
@@ -91,8 +86,8 @@ header {
     padding: 15px 40px;
     font-size: 1rem;
     font-weight: 500;
-    background-color: #663399;
-    color: #fff;
+    background-color: #00FF99;
+    color: #000;
     border: none;
     border-radius: 30px;
     text-decoration: none;
@@ -101,7 +96,7 @@ header {
 }
 
 .btn:hover {
-    background-color: #9f9df5;
+    background-color: #00CC77;
 }
 
 /* About Section */
@@ -113,7 +108,7 @@ header {
 .about-section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #e6e6ff;
+    color: #fff;
 }
 
 .about-section p {
@@ -131,7 +126,7 @@ header {
     font-size: 2.5rem;
     margin-bottom: 40px;
     text-align: center;
-    color: #e6e6ff;
+    color: #fff;
 }
 
 .event-cards {
@@ -148,18 +143,24 @@ header {
     width: 300px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
 .card h3 {
     font-size: 1.8rem;
     margin-bottom: 10px;
-    color: #9f9df5;
+    color: #00FF99;
 }
 
 .card p {
     font-size: 1.1rem;
     color: #b3b3d9;
 }
+
+.card:hover {
+    transform: scale(1.05);
+}
+
 
 /* Schedule Section */
 .schedule-section {
@@ -170,17 +171,13 @@ header {
 .schedule-section h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
-    color: #e6e6ff;
+    color: #fff;
 }
 
 .schedule-list {
     list-style: none;
     font-size: 1.2rem;
     color: #b3b3d9;
-}
-
-.schedule-list li {
-    margin-bottom: 10px;
 }
 
 /* Sponsors Section */
@@ -193,7 +190,7 @@ header {
 .sponsors-section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #e6e6ff;
+    color: #fff;
 }
 
 .sponsors-section p {
@@ -210,7 +207,7 @@ header {
 .contact-section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #e6e6ff;
+    color: #fff;
 }
 
 .contact-section p {
@@ -238,16 +235,16 @@ header {
 .contact-section button {
     padding: 15px 40px;
     font-size: 1rem;
-    background-color: #663399;
+    background-color: #00FF99;
     border: none;
     border-radius: 30px;
     cursor: pointer;
-    color: #fff;
+    color: #000;
     transition: background-color 0.3s ease;
 }
 
 .contact-section button:hover {
-    background-color: #9f9df5;
+    background-color: #00CC77;
 }
 
 /* Footer */
@@ -256,4 +253,5 @@ footer {
     text-align: center;
     font-size: 0.9rem;
     color: #b3b3d9;
+    background-color: rgba(0, 0, 0, 0.9);
 }

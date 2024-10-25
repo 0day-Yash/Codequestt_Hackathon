@@ -1,0 +1,16 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 24 Oct 2024 19:09:52 at https://www.sfhscodehack.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://www.sfhscodehack.com/ -O1 "C:\Users\yashk\OneDrive\Desktop\Hackathon\Sfhs" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+19:10:24	Error: 	"Not Found" (404) at link https://www.sfhscodehack.com/c (from https://www.sfhscodehack.com/)
+19:10:24	Error: 	"Not Found" (404) at link https://www.sfhscodehack.com/t (from https://www.sfhscodehack.com/)
+19:11:01	Error: 	"Not Found" (404) at link https://www.sfhscodehack.com/feed.xml (from https://www.sfhscodehack.com/)
+19:11:01	Error: 	"Not Found" (404) at link https://www.sfhscodehack.com/${i.uri} (from https://www.sfhscodehack.com/)
+19:11:01	Error: 	"Not Found" (404) at link https://www.sfhscodehack.com/decodeURIComponent(e (from https://www.sfhscodehack.com/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 2 minutes 20 seconds : 104 links scanned, 98 files written (14180060 bytes overall) [3617392 bytes received at 25838 bytes/sec], 13854443 bytes transferred using HTTP compression in 39 files, ratio 22%, 2.6 requests per connection
+(5 errors, 0 warnings, 0 messages)
